@@ -1,0 +1,37 @@
+// styles.scss # Manifest File
+
+// Vendors
+@import 'vendors/bootstrap_v.4.4/bootstrap.scss';
+@import 'vendors/jquery-ui';
+
+// Abstracts 
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/helpers';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/sections';
+@import 'layout/mediaqueries';
+
+// Components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+// Page
+@import 'page/home';
+@import 'page/contact';
+// Themes
+@import 'themes/theme';
+@import 'themes/admin';

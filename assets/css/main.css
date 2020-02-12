@@ -1,0 +1,65 @@
+/* Reset*/
+body {
+  margin: 0; }
+
+/* Base Typography*/
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 50px; }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 30px; }
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px; }
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+h5,
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px; }
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #221d23; }
+
+.header {
+  background-image: url("../img/bg-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding-bottom: 10rem;
+  margin-top: 80px; }
+
+.footer {
+  background: #221d23;
+  padding: 20px;
+  color: #fff; }
+
+.features {
+  margin-bottom: 100px; }
+  .features .features__title {
+    text-align: center; }
+
+.cards {
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding-bottom: 10rem; }
+  .cards .cards__title {
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

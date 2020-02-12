@@ -7,33 +7,133 @@
     <meta name="author" content="Maribel Sainz">
     <meta name="description" content="Haz trekking sin parar">
     <title>Startup Treek-in</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Mis estilos -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <nav class="navigation">
-        </nav>
+    <nav class="navbar navbar-expand-lg nav--color navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="assets/img/logo.svg" alt="Logo"> </a>
 
-        <header class="header">
-        </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prices">Precios</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-info">Registrate</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <section class="features">
-        </section>
+    <header class="header" id="about">
+        <div class="container">
+            <h1>Haz Trekking sin Parar</h1>
+            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás
+                definir la mejor ruta a tomar on tus compañeros de expedición.</p>
+        </div>
+    </header>
 
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="features__title">Características</h2>
+            <div class="features__text-content">
+                <h3>Estadísticas de tu progreso</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci non odio aliquid maxime
+                    in dignissimos, quis rem, provident ipsa libero pariatur, vel quod tempora quo. Libero vel ipsam
+                    ipsa.</p>
+                <img src="assets/img/bar-graph.svg" alt="Gráfico de barras">
+            </div>
+        </div>
+    </section>
 
-        <section class="cards">
-        </section>
+    <section class="cards" id="prices">
+        <div class="container">
+            <h2 class="cards__title">Precios</h2>
+            <div class="cards__container">
 
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2>Trekk-in Free</h2>
+                        <h4>$0 / mes</h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <p>Ver mapas creado por usuarios</p>
+                            </li>
+                            <li>
+                                <p>Conectar con otros usuarios</p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="btn btn-info">Obtén Free</a>
+                    </div>
+                </div>
 
-        <footer class="footer">
-        </footer>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5>Trekk-in Free</h5>
+                        <h4>$3500 / mes</h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <p>Ver mapas creado por usuarios</p>
+                            </li>
+                            <li>
+                                <p>Conectar con otros usuarios</p>
+                            </li>
+                            <li>
+                                <p>Definir mejores rutas</p>
+                            </li>
+                            <li>
+                                <p>Mapas Offline</p>
+                            </li>
+                            <li>
+                                <p>Integración con otras aplicaciones</p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="btn btn-info">Obtén Premium</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <h5>Legal</h5>
+            <h5>Cookies</h5>
+            <h5>Sobre anuncios</h5>
+        </div>
+        <div>
+            <h5>© 2018 Trekk-in SPA.</h5>
+        </div>
+    </footer>
     </div>
 
 

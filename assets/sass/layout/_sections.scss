@@ -1,0 +1,19 @@
+.features {
+  margin-bottom: 100px;
+
+  .features__title {
+    text-align: center;
+  }
+}
+
+.cards {
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding-bottom: 10rem;
+
+  .cards__title {
+    text-align: center;
+  }
+}

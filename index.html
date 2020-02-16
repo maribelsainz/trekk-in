@@ -18,7 +18,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg nav--color navbar-light">
+    <nav class="navigation navbar navbar-expand-lg fixed-top navbar-light bg-white">
+
         <div class="container">
             <a class="navbar-brand" href="#"> <img src="assets/img/logo.svg" alt="Logo"> </a>
 
@@ -29,22 +30,23 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#about">Acerca de</a>
+                    <li>
+                        <a class="nav-link" href="#about">Acerca de</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Caracteristicas</a>
+                    <li>
+                        <a class="nav-link" href="#features">Características</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#prices">Precios</a>
                     </li>
                 </ul>
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">Iniciar Sesión</a>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-info">Registrate</button>
+                    <li>
+                        <button type="button" class="btn navigation__boton">Regístrate</button>
                     </li>
                 </ul>
             </div>
@@ -52,35 +54,51 @@
     </nav>
 
     <header class="header" id="about">
-        <div class="container">
-            <h1>Haz Trekking sin Parar</h1>
-            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás
-                definir la mejor ruta a tomar on tus compañeros de expedición.</p>
+        <div class="header__grid container">
+            <div class="header__grid-text">
+                <h1>Haz Trekking sin Parar</h1>
+                <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás
+                    definir la mejor ruta a tomar on tus compañeros de expedición.</p>
+            </div>
         </div>
     </header>
 
     <section class="features" id="features">
-        <div class="container">
-            <h2 class="features__title">Características</h2>
-            <div class="features__text-content">
-                <h3>Estadísticas de tu progreso</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci non odio aliquid maxime
-                    in dignissimos, quis rem, provident ipsa libero pariatur, vel quod tempora quo. Libero vel ipsam
-                    ipsa.</p>
-                <img src="assets/img/bar-graph.svg" alt="Gráfico de barras">
+        <h2 class="features__title">Características</h2>
+        <div class="features__flexbox-container">
+            <div class="features__item">
+                <svg width="100%" height="100%" viewBox="0 0 318 165" preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g class="bar-graph" fill-rule="evenodd">
+                        <path class="a-bar" fill="#EE9480"
+                            d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z" />
+                        <path class="b-bar" fill="#2AB7CA"
+                            d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z" />
+                        <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5"
+                            stroke-linecap="square" />
+                    </g>
+                </svg>
+            </div>
+            <div class="features__item">
+
+                <h3 class="features__item">Estadísticas de tu progreso</h3>
+                <p class="features__item-right">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                    venenatis nec orci, viverra turpis himenaeos per
+                    sollicitudin facilisis dictum tempor sem, vel porta
+                    sociosqu felis fusce nam nascetur libero ligula.</p>
             </div>
         </div>
     </section>
 
-    <section class="cards" id="prices">
+    <section class="prices" id="prices">
         <div class="container">
-            <h2 class="cards__title">Precios</h2>
+            <h2 class="prices__title">Precios</h2>
             <div class="cards__container">
 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h2>Trekk-in Free</h2>
-                        <h4>$0 / mes</h4>
+                        <h2 class="card__title">Trekk-in Free</h2>
+                        <h2 class="card__price">$0 / mes</h2>
                         <hr>
                         <ul>
                             <li>
@@ -91,14 +109,14 @@
                             </li>
                         </ul>
                         <hr>
-                        <a href="#" class="btn btn-info">Obtén Free</a>
+                        <a href="#" class="btn card__boton-prices boton__price-1">Obtén Free</a>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5>Trekk-in Free</h5>
-                        <h4>$3500 / mes</h4>
+                        <h2 class="card__title">Trekk-in Free</h2>
+                        <h2 class="card__price">$3500 / mes</h2>
                         <hr>
                         <ul>
                             <li>
@@ -118,24 +136,28 @@
                             </li>
                         </ul>
                         <hr>
-                        <a href="#" class="btn btn-info">Obtén Premium</a>
+                        <a href="#" class="btn card__boton-prices">Obtén Premium</a>
                     </div>
                 </div>
             </div>
     </section>
 
     <footer class="footer">
-        <div>
-            <h5>Legal</h5>
-            <h5>Cookies</h5>
-            <h5>Sobre anuncios</h5>
+        <div class="footer__links">
+            <a href="#legal">
+                <p>Legal</p>
+            </a>
+            <a href="#cookies">
+                <p>Cookies</p>
+            </a>
+            <a href="#nosotros">
+                <p>Sobre nosotros</p>
+            </a>
         </div>
-        <div>
-            <h5>© 2018 Trekk-in SPA.</h5>
+        <div class="footer__copyright">
+            <p>&copy; 2018 Trekk-in SPA.</p>
         </div>
     </footer>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

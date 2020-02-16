@@ -16,3 +16,36 @@
     +'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+// BOTONES
+// Boton en estado normal
+@mixin boton-blue() {
+
+  background-color: $ball-blue;
+  font-family: $open-sans;
+  font-size: $medium;
+  color: $white;
+  font-weight: $bold;
+
+}
+
+// boton en estado hover
+@mixin boton-blue-hover() {
+
+  background-color: $middle-blue;
+  font-family: $open-sans;
+  font-size: $medium;
+  color: $white;
+  font-weight: $bold;
+
+}
+
+@mixin boton-blue-focus() {
+
+  background: $lavender-gray;
+  font-family: $open-sans;
+  font-size: $medium;
+  color: $white;
+  font-weight: $bold;
+
+}

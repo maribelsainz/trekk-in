@@ -4,5 +4,35 @@
   background-size: cover;
   height: 700px;
   padding-bottom: 10rem;
-  margin-top: 80px;
+  margin-top: 150px;
+
+  // @include respond-to('medium') {
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   min-height: 60vw;
+  // }
+
+  // @include respond-to('small') {
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   min-height: 60vw;
+  // }
+
+  // @include respond-to('x-small') {
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   min-height: 45vw;
+  // }
+}
+
+.header__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header__grid-text {
+  text-align: left;
 }

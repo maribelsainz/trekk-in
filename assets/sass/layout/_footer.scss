@@ -1,5 +1,27 @@
 .footer {
-  background: $raising-black;
-  padding: 20px;
-  color: $white;
+  background-color: $raising-black;
+  color: $platinum;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3% 0%;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $platinum;
+  }
+
+}
+
+.footer__copyright {
+  text-align: center;
+  color: $platinum;
 }

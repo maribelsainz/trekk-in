@@ -1,0 +1,27 @@
+.navigation__boton {
+  border-radius: 0px;
+
+  @include boton-blue();
+
+  &:hover {
+    @include boton-blue-hover()
+  }
+
+  &:focus {
+    @include boton-blue-focus();
+  }
+}
+
+.card__boton-prices {
+  border-radius: 0px;
+  @include boton-blue();
+  width: 245px;
+
+  &:hover {
+    @include boton-blue-hover()
+  }
+
+  &:focus {
+    @include boton-blue-focus();
+  }
+}

@@ -1,3 +1,17 @@
+@-webkit-keyframes opacidad {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+@keyframes opacidad {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 /* Reset*/
 body {
   margin: 0; }
@@ -122,30 +136,34 @@ li {
     padding-top: 2%; }
   .features .features__item {
     margin-bottom: 5%; }
-  @media (min-width: 720px) {
-    .features .features__title {
-      font-size: 2.1875rem;
-      text-align: center; }
-    .features .features__flexbox-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding-top: 2%; }
-      .features .features__flexbox-container .features__item {
-        max-width: 500px;
-        margin-bottom: 5%; }
-      .features .features__flexbox-container .features__item-right {
-        padding: 0px 30% 0px 0px; } }
+  .features .features__item-grafico:hover {
+    -webkit-animation: opacidad 4s ease-in;
+            animation: opacidad 4s ease-in; }
 
+@media (min-width: 720px) {
+  .features__title {
+    font-size: 2.1875rem;
+    text-align: center; }
+
+  .features__flexbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2%; }
+    .features__flexbox-container .features__item {
+      max-width: 500px;
+      margin-bottom: 5%; }
+    .features__flexbox-container .features__item-right {
+      padding: 0px 30% 0px 0px; } }
 .prices {
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;

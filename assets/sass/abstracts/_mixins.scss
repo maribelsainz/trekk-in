@@ -17,6 +17,15 @@
   }
 }
 
+
+// Convertidor de unidades absolutas a relativas
+@mixin relative-converter($property, $unit, $target, $context) {
+  $result: ($target / $context);
+
+  #{$property}: #{$result + $unit};
+}
+
+
 // BOTONES
 // Boton en estado normal
 @mixin boton-blue() {
